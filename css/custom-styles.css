@@ -789,6 +789,9 @@ footer .social-links li a i {
     font-style: italic;
     margin: 6.25% 0;
 }
+.about-ccn h1 {
+    margin: 0 0 10px 0;
+}
 
 /* jury */
 
@@ -886,6 +889,73 @@ footer .social-links li a i {
     margin-left: 200px;
     height: 130px;
     overflow: hidden;
+}
+
+/* universities-inner */
+.universities-inner {
+    background: #662c90 url('../images/background-universities-inner.jpg') no-repeat center top;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.universities-inner h2 {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 6% 0;
+}
+.universities-inner h2 span {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 300;
+    text-transform: lowercase;
+    line-height: 1;
+}
+.universities-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.universities-list li {
+    display: block;
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.95) url('../images/background-university-inner.png') no-repeat -50px 120px;
+    padding: 35px;
+    text-align: left;
+}
+.universities-list .image-wrap {
+    display: block;
+    width: 93px;
+    height: 93px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.universities-list .image-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.university-info {
+    float: right;
+    width: calc(100% - 118px);
+}
+.university-name, .university-text, .university-name-chines {
+    color: #493e52;
+}
+.university-name {
+    font-weight: 600;
+    font-size: 1.176470588235294em;
+    line-height: 1.2;
+}
+.university-name-chines {
+    font-weight: 500;
+    margin: 15px 0;
 }
 
 
@@ -1140,7 +1210,8 @@ footer .social-links li a i {
         width: 420px;
     }
     .inner-page h1 {
-        display: block;
+        display: inline-block;
+        width: 100%;
     }
     .jury-list li {
         height: auto;
@@ -1178,13 +1249,26 @@ footer .social-links li a i {
         height: auto;
         padding: 15px;
     }
+    .universities-list li {
+        padding: 20px;
+    }
+    .universities-list .image-wrap {
+        width: 65px;
+        height: 65px;
+    }
+    .university-info {
+        width: calc(100% - 85px);
+    }
 
 }
 
 @media(max-width: 768px) {
 
-    h2 {
+    h2, .inner-page h1 {
         font-size: 1.7em;
+    }
+    .inner-page h1 {
+        line-height: 1.2;
     }
     .how-participate .section-info, .how-participate .section-list {
         width: 100%;
@@ -1202,6 +1286,9 @@ footer .social-links li a i {
     }
     .jury-details {
         margin-bottom: 30px;
+    }
+    .universities-list li {
+        width: 100%;
     }
 
 }
@@ -1243,6 +1330,9 @@ footer .social-links li a i {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+    }
+    .inner-page h1 span {
+        display: inline;
     }
 
 }
