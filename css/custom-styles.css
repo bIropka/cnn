@@ -1252,5 +1252,8 @@ footer .social-links li a i {
     .header-info {
         font-size: 1.15em;
     }
+    .sign-up {
+        margin-left: 15px;
+    }
 
 }
