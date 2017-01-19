@@ -358,8 +358,7 @@ footer .social-links li a i {
 .about-ccn {
     padding-top: 7.4%;
     padding-bottom: 6.25%;
-    background: url('../images/background-1.jpg') no-repeat right top;
-    background-size: cover;
+    background: url('../images/background-1.png') no-repeat right -100px, linear-gradient(to right, #ffffff 10%, #f1f3f8 90%);
 }
 .section-info h2 {
     margin-top: -10px;
@@ -792,11 +791,15 @@ footer .social-links li a i {
 .about-ccn h1 {
     margin: 0 0 10px 0;
 }
+.inner-page .header-info {
+    margin-top: 10px;
+    font-size: 1.176470588235294em;
+}
 
 /* jury */
 
 .jury {
-    background: #eeeeee url('../images/background-jury.png') no-repeat right top;
+    background: #eeeeee url('../images/background-1.png') no-repeat right -100px;
     padding-bottom: 7.5%;
 }
 
@@ -912,6 +915,7 @@ footer .social-links li a i {
     font-weight: 300;
     text-transform: lowercase;
     line-height: 1;
+    font-style: normal;
 }
 .universities-list {
     display: flex;
@@ -957,6 +961,10 @@ footer .social-links li a i {
     font-weight: 500;
     margin: 15px 0;
 }
+.universities-inner .btn-round {
+    font-size: 20px;
+    padding: 1.2em 1.5em;
+}
 
 
 /**********************************************************************************************************************
@@ -970,6 +978,9 @@ footer .social-links li a i {
     }
     .header-info {
         width: 260px;
+    }
+    .inner-page .header-info {
+        width: 280px;
     }
     nav ul {
         padding: 0;
@@ -1089,6 +1100,12 @@ footer .social-links li a i {
         font-size: 1.5em;
         color: #f8a94e;
     }
+    .inner-page .header-info {
+        width: 100%;
+        font-size: 1.25em;
+        margin-top: 0;
+        bottom: 40px;
+    }
     .sign-block {
         display: none;
     }
@@ -1105,6 +1122,9 @@ footer .social-links li a i {
 
     .about-ccn {
         background: #ffffff;
+    }
+    .inner-page .about-ccn {
+        background: #eeeeee url('../images/background-1.png') no-repeat 120% -275px;
     }
     .ccn-news {
         display: none;
@@ -1285,10 +1305,25 @@ footer .social-links li a i {
         max-width: 350px;
     }
     .jury-details {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+        font-size: 0.94em;
+        height: 55px;
     }
     .universities-list li {
         width: 100%;
+    }
+    .jury-name {
+        font-size: 1.13em;
+    }
+    .jury-decor:before, .jury-decor:after {
+        top: -23px;
+    }
+    .jury-text {
+        font-size: 1.06em;
+        float: left;
+    }
+    .inner-page .about-ccn {
+        background: #eeeeee url('../images/background-1.png') no-repeat 200px -275px;
     }
 
 }
@@ -1334,6 +1369,17 @@ footer .social-links li a i {
     .inner-page h1 span {
         display: inline;
     }
+    .jury-name , .jury-details {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .inner-page .about-ccn {
+        background: #eeeeee url('../images/background-1.png') no-repeat 150px -275px;
+    }
+    .universities-inner .btn-round {
+        padding: 0.7em 1.5em;
+        line-height: 1.2;
+    }
 
 }
 
@@ -1344,6 +1390,9 @@ footer .social-links li a i {
     }
     .sign-up {
         margin-left: 15px;
+    }
+    .inner-page .header-info {
+        left: 3%;
     }
 
 }
