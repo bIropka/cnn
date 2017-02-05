@@ -1,0 +1,313 @@
+.test {
+    display: block;
+    width: 100%;
+    background: #eeeeee url(../images/background-1.png) no-repeat right -100px;
+    background-size: 40% auto;
+    padding: 0 4% 5%;
+}
+
+.test h1 {
+    margin-bottom: 5%;
+}
+
+.test fieldset {
+    display: block;
+    border: none;
+    padding-left: 45px;
+    margin: 35px 0;
+}
+
+fieldset:first-of-type {
+    margin-top: 45px;
+}
+
+fieldset:last-of-type {
+    margin-bottom: 45px;
+}
+
+.test-info {
+    font-weight: 200;
+    color: #493e52;
+    font-size: 1.4em;
+}
+
+.test-info span {
+    color: inherit;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+.test-block {
+    margin-top: 4.5%;
+    background: #fff;
+    padding: 35px 40px;
+}
+
+.test-block-header:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.test-block-name, .block-number-text {
+    font-weight: 200;
+    color: #493e52;
+    font-size: 1.5em;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.block-number-text {
+    float: right;
+}
+
+.block-number-text span {
+    font-weight: 500;
+    font-size: inherit;
+    color: inherit;
+}
+
+.question {
+    margin: 20px 0 30px;
+    background: #fafbff;
+    border: 1px solid transparent;
+}
+
+.question-header {
+    padding: 5px 15px;
+    background: #f2f4f7;
+}
+
+.question-number {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    background: #662c90;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 25px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    position: relative;
+    margin: 10px 50px 10px 0;
+}
+
+.question-number:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #662c90;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    position: absolute;
+    left: 110px;
+    top: 0;
+}
+
+.question-name {
+    display: inline-block;
+    font-weight: 500;
+    color: #493e52;
+    margin: 10px 0;
+}
+
+.test-radio {
+    display: none;
+}
+
+.test-radio-label {
+    display: block;
+    color: #493e52;
+    position: relative;
+    line-height: 24px;
+    padding-left: 45px;
+}
+
+.test-radio-label:before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #f8a94e;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.test-radio:checked + .test-radio-label:before {
+    background: #f8a94e;
+    -webkit-box-shadow: inset 0 0 0 3px #ffffff;
+    -moz-box-shadow: inset 0 0 0 3px #ffffff;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.textarea-wrap {
+    display: block;
+    height: 105px;
+    margin: 45px;
+}
+
+.textarea-wrap textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ebeef2;
+    padding: 20px 25px;
+    resize: none;
+}
+
+.textarea-wrap textarea::-webkit-input-placeholder {color: #b6b6b6; font-style: italic;}
+.textarea-wrap textarea::-moz-placeholder {color: #b6b6b6; font-style: italic;}
+.textarea-wrap textarea:-moz-placeholder {color: #b6b6b6; font-style: italic;}
+.textarea-wrap textarea:-ms-input-placeholder {color: #b6b6b6; font-style: italic;}
+
+.textarea-wrap textarea:focus::-webkit-input-placeholder {color: transparent;}
+.textarea-wrap textarea:focus::-moz-placeholder {color: transparent;}
+.textarea-wrap textarea:focus:-moz-placeholder {color: transparent;}
+.textarea-wrap textarea:focus:-ms-input-placeholder {color: transparent;}
+
+.textarea-wrap textarea:focus {
+    outline: none;
+}
+
+.block-number-num {
+    float: right;
+}
+
+.block-number-num li {
+    display: inline-block;
+    font-weight: 500;
+    color: #662c90;
+    font-size: 1.5em;
+}
+.block-number-num li:before {
+    content: '-';
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.block-number-num li:first-child:before {
+    display: none;
+}
+
+.block-number-num .active ~ li {
+    font-weight: 200;
+}
+
+.test .btn-round {
+    display: block;
+    width: 370px;
+    margin: 5% auto 0;
+    background: #d72e2e;
+    -webkit-box-shadow: inset 0 -3px 0 0 rgba(166, 9, 9, 1);
+    -moz-box-shadow: inset 0 -3px 0 0 rgba(166, 9, 9, 1);
+    box-shadow: inset 0 -3px 0 0 rgba(166, 9, 9, 1);
+    padding: 1.470588235294118em 1.764705882352941em;
+    text-transform: uppercase;
+}
+.test .btn-round:hover {
+    color: #ffffff;
+    background: rgba(166, 9, 9, 0.9);
+}
+.test .btn-round:active {
+    background: rgba(166, 9, 9, 1);
+}
+
+.timer {
+    display: block;
+    width: 270px;
+    height: 100px;
+    border: 4px solid #dacce5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1001;
+    background: linear-gradient(to bottom, #fefeff, #f2f4f8);
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.timer li {
+    display: inline-block;
+}
+
+.timer li, .timer li span {
+    color: #662c90;
+    font-size: 40px;
+    line-height: 90px;
+    font-weight: 100;
+}
+
+@media(max-width: 480px) {
+
+    .test {
+        padding: 0 0 5%;
+        background-size: 60% auto;
+    }
+
+    .question {
+        margin: 0;
+    }
+
+    .test h1,
+    .test-info,
+    .test-block-header {
+        padding: 0 15px;
+    }
+
+    .test-info {
+        margin-bottom: 30px;
+    }
+
+    .textarea-wrap {
+        margin: 30px 15px;
+    }
+
+    .test-block {
+        padding: 35px 0 0;
+        margin-top: 0;
+    }
+
+    .test fieldset {
+        padding: 0 15px;
+    }
+
+    .test .btn-round {
+        width: 290px;
+        padding: 1.2em 1.4em;
+    }
+
+    .timer {
+        width: 290px;
+        height: 50px;
+        border: 6px solid #dacce5;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 15px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .timer li, .timer li span {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+}
